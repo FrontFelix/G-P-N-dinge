@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- EXTRA LINKS -->
+    <script defer src="./navbar.js"></script>
+    <link rel="stylesheet" href="./extra/css/navbar.css">
+    <link rel="stylesheet" href="./extra/css/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- EXTRA LINKS -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <navbar class="navbar py-4 xl:py-4">
+        <div class="navbarcontent flex container-s">
+            <!--NAV LEFT-->
+            <div class="nav-left w-3/4 self-center px-2 xl:w-1/3">
+                <div class="logo">
+                    <!--<h1 class="text-3xl">Golv & Platt</h1>
+                    <p class="location">Nödinge</p>-->
+                    <img src="./Bilder/usable-logo.png" alt="">
+                </div>
+            </div>
+            <!--NAV LEFT-->
+
+            <!--NAV RIGHT-->
+            <div class="nav-right w-1/4 self-center px-16 lg:px-24 xl:px-20 xl:ml-16 xl:w-2/3">
+                <button class="float-right xl:hidden hamburger" onclick="navFunction()"><i class="fas fa-bars rotate text-xl mt-12"></i></button>
+                <div class="links1 hidden xl:flex flex-row xl:justify-around text-xl">
+                    <div class="link px-2">
+                        <a href="./index.html">Start</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./company.html">Företaget</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./service.html">Tjänster</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./referenser.html">Referenser</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./partners.html">Partners</a>
+                    </div>
+                    <div class="link px-4 aktive">
+                        <a href="./kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+            <!--NAV RIGHT-->
+        </div>
+        <div id="links" class="links links-mobile mt-10 xl:hidden mb-10">
+            <div class="flex flex-col xl:hidden">
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="index.html">Start</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="company.html">Företaget</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="service.html">Tjänster</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="referenser.html">Referenser</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="partners.html">Partners</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </navbar>
+
+    <div class="contact-content mt-12 xl:mt-32 px-4 xl:pb-28">
+        <div class="container-s">
+            <div class="contact-flex flex xl:flex-row flex-col-reverse">
+                <div class="contact-left w-full xl:w-1/2 xl:px-4 mt-8 xl:mt-0 mb-4 xl:mb-0">
+                    <iframe class="w-full block mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2121.054923098779!2d12.079556016150212!3d57.88523123299412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46455e81aaf47227%3A0x642c6caa093091a8!2zU2rDtnbDpGdlbiAxMywgNDQ5IDM2IE7DtmRpbmdl!5e0!3m2!1ssv!2sse!4v1636541715262!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact-right w-full xl:w-1/2 xl:px-4 xl:self-center">
+                    <h1 class="text-3xl text-center xl:text-left">Här kan du enkelt komma i kontakt med oss!</h1>
+                    <p class="text-xl pt-12 font-bold text-center xl:text-left">Offert</p>
+                    <p class="text-center xl:text-left">Om du vill ha en offert kan du skicka ett e-mail med bilder (ej över 1MB) på utrymmet och mått
+                        till offert@golvoplatt.se.</p>
+                    <p class="text-xl pt-6 font-bold text-center xl:text-left">Övriga frågor</p>
+                    <p class="text-center xl:text-left">Övriga frågor besvaras från denna adress: info@golvoplatt.se</p>
+                    <p class="text-xl text-center xl:text-left pt-10">Vi svarar dig inom ett par arbetsdagar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer py-24 text-center text-white mt-20 xl:text-left">
+        <div class="container-s">
+            <div class="footer-flex flex flex-col xl:flex-row xl:justify-around">
+                <div class="footer-container">
+                    <h1 class="text-3xl ">Nödinge Golv & Platt</h1>
+                    <iframe class="w-full block mx-auto mt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2121.054923098779!2d12.079556016150212!3d57.88523123299412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46455e81aaf47227%3A0x642c6caa093091a8!2zU2rDtnbDpGdlbiAxMywgNDQ5IDM2IE7DtmRpbmdl!5e0!3m2!1ssv!2sse!4v1636541715262!5m2!1ssv!2sse" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="footer-container mt-20 xl:mt-0">
+                    <h2 class="text-2xl">Våra Tjänster</h2>
+                    <div class="footer-service flex flex-wrap mx-auto mt-4 xl:flex-col">
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Golvslipning</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Flytspackling</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Parkettläggning</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Mattläggning</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Våtrumsarbeten</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Plattsättning</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-full xl:w-1/3">Fallspackling</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-full xl:w-1/3">Golvspackling</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-full xl:w-1/3">Trägolvsbehandlingar</p>
+                    </div>
+                </div>
+                <div class="footer-container mt-20 xl:mt-0">
+                    <h2 class="text-2xl">Kontakta oss</h2>
+                    <div class="footer-contact flex flex-col w-1/2 xl:w-full mx-auto mt-5">
+                        <div class="footer-number">
+                            <div class="footer-icon flex">
+                                <i class="fas fa-phone-alt mr-7 text-2xl self-center"></i>
+                                <p class="self-center">0707-989101</p>
+                            </div>
+                        </div>
+                        <div class="footer-email-offert mt-4">
+                            <div class="footer-icon flex">
+                                <i class="far fa-paper-plane mr-7 text-2xl self-center"></i>
+                                <p class="self-center">offert@golvoplatt.se</p>
+                            </div>
+                        </div>
+                        <div class="footer-email-question mt-4">
+                            <div class="footer-icon flex">
+                                <i class="far fa-paper-plane mr-7 text-2xl self-center"></i>
+                                <p class="self-center">info@golvoplatt.se</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

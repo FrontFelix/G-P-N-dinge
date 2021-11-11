@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root {
+    --darkBlack: #1B202A;
+    --mainBlue: #000099;
+}
+
+p {
+    font-family: 'Questrial', sans-serif;
+}
+h1 {
+    font-weight: 300 !important;
+    font-family: 'Bree Serif', serif;
+}
+
+#slideshow {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+}
+#slideshow img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+  
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.slide img {
+    object-fit: cover;
+    width: 600px;
+    height: 500px;
+}
+
+.content-left h1 {
+    font-weight: 300 !important;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Anton', sans-serif;
+}
+
+.content-left p {
+    font-family: 'Questrial', sans-serif;
+    color: #707070;
+}
+
+.content-right a, .content-left a  {
+    font-family: 'Questrial', sans-serif;
+    background-color: var(--mainBlue);
+    text-transform: uppercase;
+}
+
+.border-box {
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-left: 2px solid #707070;
+    border-bottom: 2px solid #707070;
+}
+
+.content-left {
+    position: relative;
+}
+
+
+.container-s {
+    display: block;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+/* SERVICE */
+
+.service-box {
+    position: relative;
+    background-color: var(--mainBlue);
+    width:300px;
+    height: 300px;
+}
+.service-box img {
+    object-fit: cover;
+}
+
+.service-item img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-title {
+    border-radius: 0 0 8px 0;
+    background-color: var(--mainBlue);
+    top: 15px;
+    position: absolute;
+}
+
+/* SERVICE */
+
+.middle-content {
+    background-color: var(--darkBlack);
+}
+.middle-content h1 {
+    font-weight: 300 !important;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Anton', sans-serif;
+}
+
+
+button, a {
+    transition: 200ms;
+}
+
+
+button:hover, a:hover {
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+}
+
+
+.contact-right h1 {
+    font-weight: 300 !important;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.contact-right i {
+    color: #707070;
+}
+
+.contact-index a {
+    background-color: var(--darkBlack);
+}
+
+/* FOOTER */
+
+
+.inbox {
+    position: relative;
+}
+.email-1 {
+    font-size: 13px;
+    position: absolute;
+    top: 135px;
+    left: 290px;
+}
+
+.message-1 {
+    font-size: 10px;
+    position: absolute;
+    top: 165px;
+    left: 290px;
+}
+
+
+@media (min-width: 1280px) {
+
+
+    #slideshow {
+        width: 600px;
+        height: 500px;
+    }
+
+    #slideshow img {
+        width: 600px;
+        height: 500px;
+    }
+    .service-item img {
+        height: 200px;
+    }
+}

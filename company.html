@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- EXTRA LINKS -->
+    <link rel="stylesheet" href="./extra/css/navbar.css">
+    <link rel="stylesheet" href="./extra/css/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- EXTRA LINKS -->
+
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META TAGS-->
+
+    <!--TITLE-->
+    <title>Golv & Platt</title>
+    <!--TITLE-->
+</head>
+
+<body>
+    <div class="navbar py-4 xl:px-32 xl:py-4">
+        <div class="navbarcontent flex">
+            <!--NAV LEFT-->
+            <div class="nav-left w-3/4 self-center px-2 xl:w-1/3">
+                <div class="logo">
+                    <!--<h1 class="text-3xl">Golv & Platt</h1>
+                    <p class="location">Nödinge</p>-->
+                    <img src="./Bilder/Logo.gif" alt="">
+                </div>
+            </div>
+            <!--NAV LEFT-->
+
+            <!--NAV RIGHT-->
+            <div class="nav-right w-1/4 self-center px-16 lg:px-24 xl:px-20 xl:ml-16 xl:w-2/3">
+                <button class="float-right xl:hidden hamburger" onclick="navFunction()"><i class="fas fa-bars rotate text-xl mt-16"></i></button>
+                <div class="links1 hidden xl:flex flex-row xl:justify-around text-xl">
+                    <div class="link px-2">
+                        <a href="./index.html">Start</a>
+                    </div>
+                    <div class="link px-4 aktive">
+                        <a href="./company.html">Företaget</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./service.html">Tjänster</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./referenser.html">Referenser</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./partners.html">Partners</a>
+                    </div>
+                    <div class="link px-4 ">
+                        <a href="./kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+            <!--NAV RIGHT-->
+        </div>
+        <div id="links" class="links links-mobile mt-10 xl:hidden mb-10">
+            <div class="flex flex-col xl:hidden">
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="index.html">Start</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="company.html">Företaget</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="service.html">Tjänster</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="referenser.html">Referenser</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="partners.html">Partners</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-16 mt-10 mx-auto xl:px-0 xl:mt-2">
+        <div class="content flex flex-col xl:flex-row xl:justify-between xl:w-full xl:mt-10">
+
+            <!--CONTENT LEFT-->
+            <div class="content-left xl:w-1/3 xl:self-center xl:ml-20 xl:px-6">
+             <h1 class="text-4xl xl:text-3xl">Nödinge golv & platt är en firma som drivs av en erfaren hantverkare inom golvbranschen</h1>
+             <p class="mt-2 xl:pl-32 xl:text-xl xl:mt-16">Vi erbjuder snabb och enkel service för både privat- och företagskunder.<p>
+                 <a class="block ml-32 rounded w-2/3 text-center text-2xl mt-10 py-2 px-6 text-white xl:block hidden" href="">Kontakta oss</a>
+                 <div class="border-box hidden xl:block mt-10">
+
+                 </div>
+            </div>
+            <!--CONTENT LEFT-->
+
+            <!--CONTENT RIGHT-->
+            <div class="content-right mt-10 xl:mt-0 xl:self-center xl:w-2/3 xl:px-6">
+                <img class="placeholder-img block m-auto" src="./Bilder/1.jpg" alt="">
+                <a class="block m-auto rounded w-2/3 text-center text-2xl mt-10 mb-10 py-2 px-4 text-white xl:hidden" href="">Kontakta oss</a>
+            </div>
+            <!--CONTENT RIGHT-->
+        </div>
+    </div>
+
+    <div class="footer px-10 py-4">
+        <img class="block mx-auto" src="./Bilder/GVK.gif" alt="">
+        <p class="text-center">Certifierad av <br>AB Svensk våtrumskontroll</p>
+    </div>
+
+
+    <script>
+        function navFunction() {
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                $('.rotate').toggleClass('down');
+            } else {
+                $('.rotate').toggleClass('down');
+                x.style.display = "block";
+            }
+
+            /*$(".hamburger").click(function () {
+                $(".rotate").toggleClass("down");
+            });*/
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- EXTRA LINKS -->
+    <script defer src="./navbar.js"></script>
+
+    <link rel="stylesheet" href="./extra/css/navbar.css">
+    <link rel="stylesheet" href="./extra/css/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- EXTRA LINKS -->
+
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META TAGS-->
+
+    <!--TITLE-->
+    <title>Golv & Platt</title>
+    <!--TITLE-->
+</head>
+
+<body>
+    <navbar class="navbar py-4 xl:py-4">
+        <div class="navbarcontent flex container-s">
+            <!--NAV LEFT-->
+            <div class="nav-left w-3/4 self-center px-2 xl:w-1/3">
+                <div class="logo">
+                    <!--<h1 class="text-3xl">Golv & Platt</h1>
+                    <p class="location">Nödinge</p>-->
+                    <img src="./Bilder/usable-logo.png" alt="">
+                </div>
+            </div>
+            <!--NAV LEFT-->
+
+            <!--NAV RIGHT-->
+            <div class="nav-right w-1/4 self-center px-16 lg:px-24 xl:px-20 xl:ml-16 xl:w-2/3">
+                <button class="float-right xl:hidden hamburger" onclick="navFunction()"><i
+                        class="fas fa-bars rotate text-xl mt-12"></i></button>
+                <div class="links1 hidden xl:flex flex-row xl:justify-around text-xl">
+                    <div class="link aktive px-2">
+                        <a href="./index.html">Start</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./company.html">Företaget</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./service.html">Tjänster</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./referenser.html">Referenser</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./partners.html">Partners</a>
+                    </div>
+                    <div class="link px-4">
+                        <a href="./contact.html">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+            <!--NAV RIGHT-->
+        </div>
+        <div id="links" class="links links-mobile mt-10 xl:hidden mb-10">
+            <div class="flex flex-col xl:hidden">
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="./index.html">Start</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="./company.html">Företaget</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="service.html">Tjänster</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="referenser.html">Referenser</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="partners.html">Partners</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="./contact.html">Kontakt</a>
+            </div>
+        </div>
+    </navbar>
+
+    <div class="top px-5 mt-10 mx-auto xl:px-0 xl:mt-2">
+        <div class="container-s content flex flex-col xl:flex-row xl:justify-between xl:w-full xl:mt-10">
+
+            <!--CONTENT LEFT-->
+            <div class="content-left xl:w-1/3 xl:self-center xl:px-8 xl:mx-0">
+                <h1 class="text-4xl xl:text-3xl md:text-center xl:text-left">Nödinge golv & platt är en firma som drivs
+                    av en erfaren hantverkare inom golvbranschen</h1>
+                <p class="mt-2 xl:pl-32 xl:text-xl xl:mt-16 md:text-center xl:text-left">Vi erbjuder snabb och enkel
+                    service för både privat- och företagskunder.<p>
+                        <a class="block ml-32 rounded w-2/3 text-center text-2xl mt-10 py-2 px-6 text-white xl:block hidden"
+                            href="">Kontakta oss</a>
+                        <div class="border-box hidden xl:block mt-10 mx-8">
+
+                        </div>
+            </div>
+            <!--CONTENT LEFT-->
+
+            <!--CONTENT RIGHT-->
+            <div class="content-right mt-10 xl:mt-0 xl:self-center xl:w-1/2">
+                <div id="slideshow">
+                    <div>
+                        <img src="./Bilder/slideshow/slide1.jpg">
+                    </div>
+                    <div>
+                        <img src="./Bilder/slideshow/slide2.jpg">
+                    </div>
+                    <div>
+                        <img src="./Bilder/slideshow/slide3.jpg">
+                    </div>
+                    <div>
+                        <img src="./Bilder/slideshow/slide4.jpg">
+                    </div>
+                    <div>
+                        <img src="./Bilder/slideshow/slide5.jpg">
+                    </div>
+                    <div>
+                        <img src="./Bilder/slideshow/slide6.jpg">
+                    </div>
+                    <div>
+                        <img src="./Bilder/slideshow/slide7.jpg">
+                    </div>
+                    <div>
+                        <img src="./Bilder/slideshow/slide8.jpg">
+                    </div>
+                    <div>
+                        <img src="./Bilder/slideshow/slide9.jpg">
+                    </div>
+                    <div>
+                        <img src="./Bilder/slideshow/slide10.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<img class="placeholder-img block m-auto md:w-1/2 xl:w-full" src="./Bilder/1.jpg" alt="">!-->
+        <a class="block m-auto rounded w-2/3 md:w-1/2 text-center text-2xl mt-10 mb-10 py-2 px-4 text-white xl:hidden"
+            href="">Kontakta oss</a>
+    </div>
+    <!--CONTENT RIGHT-->
+    </div>
+    </div>
+    <div class="middle-content mt-20 xl:mt-52 py-32 mb-10">
+        <div class="container-s text-center text-white px-6 xl:px-0">
+            <h1 class="text-3xl">Välkommen till Nödinge Golv & Platt</h1>
+            <p class="text-xl py-2 xl:w-1/2 mx-auto">Vi är specialister på golvläggning, plattsättning, våtrum
+                (Cerifireade av GVK), underhåll av trägolv och golvslipning.</p>
+            <a class="text-center block mt-6 text-xl bg-white text-black py-3 px-2 w-1/2 xl:w-1/5 mx-auto rounded"
+                href="./about.html">Läs mer om oss</a>
+        </div>
+    </div>
+    <div class="service my-20">
+        <!--10 tjänster-->
+        <div class="container-s">
+            <div class="service-flex flex justify-around flex-col md:flex-row md:flex-wrap">
+                <div class="service-item md:w-1/2 xl:w-1/4 px-16 xl:px-8 mt-8">
+                    <a class="text-center" href="">
+                        <img class="w-full" src="./Bilder/service/parkettL.jpg" alt="Golvslipning">
+                        <button
+                            class="text-center mx-auto block w-full mt-2 py-2 text-white font-bold">Parkettläggning</button>
+                    </a>
+                    <p class="pt-2 text-center">Vi slipar och renoverar din gamla parkett om förutsättningarna finns.
+                        Kontakta oss så kommer vi och tittar.</p>
+                </div>
+                <div class="service-item md:w-1/2 xl:w-1/4 px-16 xl:px-8 mt-8">
+                    <a class="text-center" href="">
+                        <img class="w-full" src="./Bilder/service/mattL.jpg" alt="Golvslipning">
+                        <button
+                            class="text-center mx-auto block w-full mt-2 py-2 text-white font-bold">Mattläggning</button>
+                    </a>
+                    <p class="pt-2 text-center">Vi slipar och renoverar din gamla parkett om förutsättningarna finns.
+                        Kontakta oss så kommer vi och tittar.</p>
+                </div>
+                <div class="service-item md:w-1/2 xl:w-1/4 px-16 xl:px-8 mt-8">
+                    <a class="text-center" href="">
+                        <img class="w-full" src="./Bilder/service/woodB.JPG" alt="Golvslipning">
+                        <button
+                            class="text-center mx-auto block w-full mt-2 py-2 text-white font-bold">Trägolvsbehandlingar</button>
+                    </a>
+                    <p class="pt-2 text-center">Vi slipar och renoverar din gamla parkett om förutsättningarna finns.
+                        Kontakta oss så kommer vi och tittar.</p>
+                </div>
+                <div class="service-item md:w-1/2 xl:w-1/4 px-16 xl:px-8 mt-8">
+                    <a class="text-center" href="">
+                        <img class="w-full" src="./Bilder/service/golvslipning.jpg" alt="Golvslipning">
+                        <button
+                            class="text-center mx-auto block w-full mt-2 py-2 text-white font-bold">Golvslipning</button>
+                    </a>
+                    <p class="pt-2 text-center">Vi slipar och renoverar din gamla parkett om förutsättningarna finns.
+                        Kontakta oss så kommer vi och tittar.</p>
+                </div>
+                <div class="service-item md:w-1/2 xl:w-1/4 px-16 xl:px-8 mt-8">
+                    <a class="text-center" href="">
+                        <img class="w-full" src="./Bilder/service/vatR.jpg" alt="Golvslipning">
+                        <button
+                            class="text-center mx-auto block w-full mt-2 py-2 text-white font-bold">Våtrumsarbeten</button>
+                    </a>
+                    <p class="pt-2 text-center">Vi slipar och renoverar din gamla parkett om förutsättningarna finns.
+                        Kontakta oss så kommer vi och tittar.</p>
+                </div>
+                <div class="service-item md:w-1/2 xl:w-1/4 px-16 xl:px-8 mt-8">
+                    <a class="text-center" href="">
+                        <img class="w-full" src="./Bilder/service/platS.jpg" alt="Golvslipning">
+                        <button
+                            class="text-center mx-auto block w-full mt-2 py-2 text-white font-bold">Plattsättning</button>
+                    </a>
+                    <p class="pt-2 text-center">Vi slipar och renoverar din gamla parkett om förutsättningarna finns.
+                        Kontakta oss så kommer vi och tittar.</p>
+                </div>
+                <div class="service-item md:w-1/2 xl:w-1/4 px-16 xl:px-8 mt-8">
+                    <a class="text-center" href="">
+                        <img class="w-full" src="./Bilder/service/fallS.JPG" alt="Golvslipning">
+                        <button
+                            class="text-center mx-auto block w-full mt-2 py-2 text-white font-bold">Fallspackling</button>
+                    </a>
+                    <p class="pt-2 text-center">Vi slipar och renoverar din gamla parkett om förutsättningarna finns.
+                        Kontakta oss så kommer vi och tittar.</p>
+                </div>
+                <div class="service-item md:w-1/2 xl:w-1/4 px-16 xl:px-8 mt-8">
+                    <a class="text-center" href="">
+                        <img class="w-full" src="./Bilder/service/golvS.JPG" alt="Golvslipning">
+                        <button class="text-center mx-auto block w-full mt-2 py-2 text-white font-bold">Golvspackling /
+                            Flytspackling</button>
+                    </a>
+                    <p class="pt-2 text-center">Vi slipar och renoverar din gamla parkett om förutsättningarna finns.
+                        Kontakta oss så kommer vi och tittar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-index">
+        <div class="container-s">
+            <div class="contact-flex-index flex xl:my-40">
+                <div class="c-index-left xl:pr-8">
+                    <div class="inbox">
+                        <img class="hidden xl:block xl:mx-auto" src="./Bilder/undraw_new_notifications_re_xpcv.svg" alt="">
+                        <h1 class="email-1 text-white hidden xl:block">offert@golvoplatt.se</h1>
+                        <p class="message-1 hidden xl:block">Hej! Jag hade velat ha en offert på mitt badrum. Mvh Fredrik</p>
+                    </div>
+                </div>
+                <div class="c-index-right mx-auto xl:self-center xl:pl-8">
+                    <h1 class="text-center text-3xl xl:text-left">Kontakta oss idag!</h1>
+                    <p class="text-center px-8 text-xl pt-2 xl:text-left xl:px-0">Vill du ha en offert eller bara få din
+                        fråga besvarad tveka inte att höra av dig!</p>
+                    <a class="block mx-auto text-center w-1/2 rounded text-white text-xl py-2 my-4 xl:mx-0"
+                        href="./contact.html">Kontakta oss</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer py-24 text-center text-white mt-20 xl:text-left">
+        <div class="container-s">
+            <div class="footer-flex flex flex-col xl:flex-row xl:justify-around">
+                <div class="footer-container">
+                    <h1 class="text-3xl ">Nödinge Golv & Platt</h1>
+                    <iframe class="w-full block mx-auto mt-4"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2121.054923098779!2d12.079556016150212!3d57.88523123299412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46455e81aaf47227%3A0x642c6caa093091a8!2zU2rDtnbDpGdlbiAxMywgNDQ5IDM2IE7DtmRpbmdl!5e0!3m2!1ssv!2sse!4v1636541715262!5m2!1ssv!2sse"
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="footer-container mt-20 xl:mt-0">
+                    <h2 class="text-2xl">Våra Tjänster</h2>
+                    <div class="footer-service flex flex-wrap mx-auto mt-4 xl:flex-col">
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Golvslipning</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Flytspackling</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Parkettläggning</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Mattläggning</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Våtrumsarbeten</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-1/3">Plattsättning</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-full xl:w-1/3">Fallspackling</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-full xl:w-1/3">Golvspackling</p>
+                        <p class="w-1/3 xl:pt-2 px-2 w-full xl:w-1/3">Trägolvsbehandlingar</p>
+                    </div>
+                </div>
+                <div class="footer-container mt-20 xl:mt-0">
+                    <h2 class="text-2xl">Kontakta oss</h2>
+                    <div class="footer-contact flex flex-col w-1/2 xl:w-full mx-auto mt-5">
+                        <div class="footer-number">
+                            <div class="footer-icon flex">
+                                <i class="fas fa-phone-alt mr-7 text-2xl self-center"></i>
+                                <p class="self-center">0707-989101</p>
+                            </div>
+                        </div>
+                        <div class="footer-email-offert mt-4">
+                            <div class="footer-icon flex">
+                                <i class="far fa-paper-plane mr-7 text-2xl self-center"></i>
+                                <p class="self-center">offert@golvoplatt.se</p>
+                            </div>
+                        </div>
+                        <div class="footer-email-question mt-4">
+                            <div class="footer-icon flex">
+                                <i class="far fa-paper-plane mr-7 text-2xl self-center"></i>
+                                <p class="self-center">info@golvoplatt.se</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<div class="footer px-10 py-4">
+        <img class="block mx-auto" src="./Bilder/GVK.gif" alt="">
+        <p class="text-center">Certifierad av <br>AB Svensk våtrumskontroll</p>
+    </div>-->
+
+
+
+</body>
+
+</html>

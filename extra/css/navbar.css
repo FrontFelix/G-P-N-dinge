@@ -1,0 +1,72 @@
+:root {
+    --darkBlack: #1B202A;
+    --mainBlue: #000099;
+}
+.logo {
+    position: relative;
+}
+
+.logo h1 {
+    font-weight: 900;
+    color: var(--mainBlue);
+}
+
+.location {
+    color: var(--darkBlack);
+    top: -17px;
+    position: absolute;
+}
+.links {
+    display: none;
+}
+
+.links-mobile a{
+    text-align: center;
+    background-color: var(--darkBlack);
+    color: white;
+}
+
+
+.rotate{
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.rotate.down{
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.link {
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.aktive a::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    top: 40px;
+    background-color: var(--darkBlack);
+}
+
+.link:hover  {
+    color: #000099;
+}
+
+.service-item button {
+    background-color: var(--darkBlack);
+}
+
+
+.footer {
+    background-color: var(--darkBlack);
+}
+.footer-contact p {
+    text-align: left !important;
+}
