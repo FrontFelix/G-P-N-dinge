@@ -156,14 +156,14 @@ button:hover, a:hover {
     position: relative;
 }
 .email-1 {
-    font-size: 13px;
+    font-size: 15px;
     position: absolute;
     top: 135px;
     left: 290px;
 }
 
 .message-1 {
-    font-size: 10px;
+    font-size: 13px;
     position: absolute;
     top: 165px;
     left: 290px;
