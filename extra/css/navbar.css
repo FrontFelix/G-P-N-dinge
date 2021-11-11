@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.footer-bransch {
+    width: 100px;
+}
+
 .logo h1 {
     font-weight: 900;
     color: var(--mainBlue);
