@@ -7,7 +7,6 @@
     --darkBlack: #1B202A;
     --mainBlue: #000099;
 }
-
 p {
     font-family: 'Questrial', sans-serif;
 }
@@ -15,6 +14,13 @@ h1 {
     font-weight: 300 !important;
     font-family: 'Bree Serif', serif;
 }
+
+
+.company-left a {
+    background-color: var(--darkBlack);
+}
+
+
 
 #slideshow {
     position: relative;
@@ -76,11 +82,6 @@ h1 {
 }
 
 
-.container-s {
-    display: block;
-    margin: 0 auto;
-    max-width: 1300px;
-}
 
 /* SERVICE */
 
@@ -129,9 +130,7 @@ button:hover, a:hover {
 
 /* FOOTER */
 
-.footer {
-    width: 100%;
-}
+
 
 
 .contact-right h1 {
@@ -162,11 +161,29 @@ button:hover, a:hover {
     left: 290px;
 }
 
+.company-right {
+    position: relative;
+}
+
+
+
 .message-1 {
     font-size: 13px;
     position: absolute;
     top: 165px;
     left: 290px;
+}
+
+.c-background {
+    position: relative;
+    width: 390px;
+    height: 224px;
+    background-size: contain;
+    background-image: url('../../Bilder/companies/blob.svg');
+}
+
+.svg-contact path:hover {
+    fill: #000099;
 }
 
 

@@ -1,7 +1,11 @@
+var y = document.getElementById("serviceDropdown");
+
+
 function navFunction() {
     var x = document.getElementById("links");
     if (x.style.display === "block") {
         x.style.display = "none";
+        y.style.display = "none"
         $('.rotate').toggleClass('down');
     } else {
         $('.rotate').toggleClass('down');
@@ -11,6 +15,15 @@ function navFunction() {
     /*$(".hamburger").click(function () {
         $(".rotate").toggleClass("down");
     });*/
+}
+
+
+function serviceButton() {
+    if (y.style.display === "block") {
+        y.style.display = "none";
+    } else {
+        y.style.display = "block";
+    }
 }
 
 

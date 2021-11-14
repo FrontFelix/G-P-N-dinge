@@ -5,8 +5,8 @@
 
     <!-- EXTRA LINKS -->
     <script defer src="./navbar.js"></script>
-    <link rel="stylesheet" href="./extra/css/navbar.css">
-    <link rel="stylesheet" href="./extra/css/style.css">
+    <link rel="stylesheet" href="../extra/css/navbar.css">
+    <link rel="stylesheet" href="../extra/css/service.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -19,7 +19,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+</head>
 
+<body>
 
     <navbar class="navbar py-4 xl:py-4">
         <div class="navbarcontent flex container-s">
@@ -28,7 +30,7 @@
                 <div class="logo">
                     <!--<h1 class="text-3xl">Golv & Platt</h1>
                     <p class="location">Nödinge</p>-->
-                    <img src="./Bilder/logo.gif" alt="">
+                    <img src="../Bilder/logo.gif" alt="">
                 </div>
             </div>
             <!--NAV LEFT-->
@@ -39,10 +41,10 @@
                         class="fas fa-bars rotate text-xl mt-12"></i></button>
                 <div class="links1 hidden xl:flex flex-row xl:justify-around text-xl">
                     <div class="link px-2">
-                        <a  class="nav-btn " href="./index.html">Start</a>
+                        <a  class="nav-btn " href="../index.html">Start</a>
                     </div>
                     <div class="link px-4 aktive">
-                        <a class="nav-btn " href="./company.html">Företaget</a>
+                        <a class="nav-btn " href="../company.html">Företaget</a>
                     </div>
                     <div class="link px-4 service-links">
                         <a class="nav-btn" href="./service.html">Tjänster</a>
@@ -58,15 +60,11 @@
                             <a class="block my-5 rounded " href="./service/tragolvbehand.html">Trägolvsbehandlingar</a>
                         </div>
                     </div>
-                    <div class="link px-4 ref-links">
+                    <div class="link px-4">
                         <a class="nav-btn" href="./referenser.html">Referenser</a>
-                        <div class="dropdownref dropdown-ref px-10 hidden rounded text-white">
-                            <a class="block my-5 rounded " href="./service/golvslip.html">Sammarbeten</a>
-                            <a class="block my-5 rounded " href="./service/flytspack.html">Bilder</a>
-                        </div>
                     </div>
                     <div class="link px-4">
-                        <a class="nav-btn" href="./kontakt.html">Kontakt</a>
+                        <a class="nav-btn" href="../contact.html">Kontakt</a>
                     </div>
                 </div>
             </div>
@@ -74,43 +72,38 @@
         </div>
         <div id="links" class="links links-mobile mt-10 xl:hidden mb-10">
             <div class="flex flex-col xl:hidden">
-                <a class="mt-2 py-2 w-1/2 block m-auto " href="index.html">Start</a>
-                <a class="mt-2 py-2 w-1/2 block m-auto " href="company.html">Företaget</a>
-                <button id="service-btn"  onclick="serviceButton()" class="mt-2 py-2 w-1/2 block m-auto rounded">Tjänster</button>
-                <div id="serviceDropdown" class="dropdown-mobile dropdown-service-mobile hidden rounded text-white w-1/2 mx-auto">
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/golvslip.html">Golvslipning</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/flytspack.html">Flytspackling</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/parkettleggning.html">Parkettläggning</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/mattleggning.html">Mattläggning</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/vatrumarbeten.html">Våtrumsarbeten</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/plattsettning.html">Plattsättning</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/fallspack.html">Fallspackling</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/golvspack.html">Golvspackling</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/tragolvbehand.html">Trägolvsbehandlingar</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="index.html">Start</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="company.html">Företaget</a>
+                <button id="service-btn"  onclick="serviceButton()" class="mt-4 py-2 w-1/2 block m-auto rounded text-xl">Tjänster</button>
+                <div id="serviceDropdown" class="dropdown-mobile dropdown-service-mobile hidden rounded text-white">
+                    <a class="block my-5 rounded w-1/2 px-2 md:w-1/3 mx-auto py-2 text-xl" href="./service/golvslip.html">Golvslipning</a>
+                    <a class="block my-5 rounded w-1/2 px-2 md:w-1/3 mx-auto py-2 text-xl" href="./service/flytspack.html">Flytspackling</a>
+                    <a class="block my-5 rounded w-1/2 px-2 md:w-1/3 mx-auto py-2 text-xl" href="./service/parkettleggning.html">Parkettläggning</a>
+                    <a class="block my-5 rounded w-1/2 px-2 md:w-1/3 mx-auto py-2 text-xl" href="./service/mattleggning.html">Mattläggning</a>
+                    <a class="block my-5 rounded w-1/2 px-2 md:w-1/3 mx-auto py-2 text-xl" href="./service/vatrumarbeten.html">Våtrumsarbeten</a>
+                    <a class="block my-5 rounded w-1/2 px-2 md:w-1/3 mx-auto py-2 text-xl" href="./service/plattsettning.html">Plattsättning</a>
+                    <a class="block my-5 rounded w-1/2 px-2 md:w-1/3 mx-auto py-2 text-xl" href="./service/fallspack.html">Fallspackling</a>
+                    <a class="block my-5 rounded w-1/2 px-2 md:w-1/3 mx-auto py-2 text-xl" href="./service/golvspack.html">Golvspackling</a>
+                    <a class="block my-5 rounded w-1/2 px-2 md:w-1/3 mx-auto py-2 text-xl" href="./service/tragolvbehand.html">Trägolvsbehandlingar</a>
                 </div>
-                <a class="mt-2 py-2 w-1/2 block m-auto " href="referenser.html">Referenser</a>
-                <a class="mt-2 py-2 w-1/2 block m-auto " href="contact.html">Kontakt</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="referenser.html">Referenser</a>
+                <a class="mt-4 py-2 w-1/2 block m-auto rounded text-xl" href="contact.html">Kontakt</a>
             </div>
         </div>
     </navbar>
 
-    <div class="company-content my-20">
-        <div class="container-s">
-            <div class="company-flex flex flex-col px-4 text-center xl:text-left xl:flex-row">
-                <div class="company-left xl:w-1/2 self-center">
-                    <h1 class="text-3xl">Nödinge Golv & Platt</h1>
-                    <p class="italic py-2">Vi startade <span class="font-bold">Nödinge Golv & Platt</span> 2006</p>
-                    <p class="mb-10 md:px-5 xl:px-0">Projekt vi arbetar med är vanligen kontor, skolor, hotell, butiker, gymnastikhallar, storkök och
-                        gym. Inom området golvläggning kan vi hjälpa till med så gott som allt; läggning av textil,
-                        linoleum, plast, våtrum, parkett mm.</p>
-                        <a class="text-xl mr-4 px-4 py-2 text-center text-white my-4 rounded" href="./contact.html">Kontakta oss</a>
-                        <a class="text-xl mx-4 px-4 py-2 text-center text-white my-4 rounded" href="./images.html">Kolla våra bilder</a>
-                </div>
-                <div class="company-right xl:w-1/2 mt-20 xl:mt-0">
-                    <object class="md:w-1/2 mx-auto xl:w-full" data="./Bilder/companies/Kakel.svg" type="image/svg+xml">
-                        <img src="./Bilder/companies/Kakel.svg" />
-                      </object> 
-                </div>
+
+    <div class="service container-s xl:my-12 my-10">
+        <div class="servic-content flex flex-col-reverse xl:flex-row px-4 xl:px-0">
+            <div class="service-left w-full xl:w-1/2 flex flex-wrap rounded">
+                <img class="w-full px-1 py-1 rounded" src="../Bilder/slideshow/slide1.jpg" alt="">
+                <img class="w-1/2 px-1 py-1 rounded" src="../Bilder/slideshow/slide3.JPG" alt="">
+                <img class="w-1/2 px-1 py-1 rounded" src="../Bilder/slideshow/slide3.JPG" alt="">
+            </div>
+            <div class="service-right w-full xl:w-1/2  xl:ml-20 self-center text-center xl:text-left my-10 xl:my-0">
+                <h1 class="text-3xl py-5">Golvslipning</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
+                <a class="mt-5 block w-1/2 text-white xl:w-1/3 text-center text-2xl py-2 rounded mx-auto w-1/2 xl:mx-0" href="">Kontakta oss</a>
             </div>
         </div>
     </div>
@@ -122,9 +115,9 @@
                 <div class="footer-container">
                     <h1 class="text-3xl ">Nödinge Golv & Platt</h1>
                     <a href="https://www.gvk.se/" target="_blank"><img class="footer-bransch my-12 block mx-auto"
-                            src="./Bilder/gvk-t.png" alt=""></a>
+                            src="../Bilder/gvk-t.png" alt=""></a>
                     <a href="https://www.golvbranschen.se/" target="_blank"><img
-                            class="footer-bransch my-4 block mx-auto" src="./Bilder/GolvBranschen.svg" alt=""></a>
+                            class="footer-bransch my-4 block mx-auto" src="../Bilder/GolvBranschen.svg" alt=""></a>
                 </div>
                 <div class="footer-container mt-20 xl:mt-0">
                     <h2 class="text-2xl">Våra Tjänster</h2>
@@ -140,6 +133,8 @@
                         <p class="w-1/3 xl:pt-2 px-2 w-full xl:w-1/3">Trägolvsbehandlingar</p>
                     </div>
                 </div>
+
+
                 <div class="footer-container mt-20 xl:mt-0">
                     <h2 class="text-2xl">Kontakta oss</h2>
                     <div class="footer-contact flex flex-col w-1/2 xl:w-full mx-auto mt-5">
