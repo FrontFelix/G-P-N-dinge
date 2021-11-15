@@ -3,6 +3,13 @@
 
 <head>
 
+    <link rel="icon" type="image/png" href="./Bilder/mini.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./Bilder/mini.png" sizes="32x32">
+    
+    <!-- for IE -->
+    <link rel="icon" type="image/x-icon" href="./Bilder/mini.png" >
+    <link rel="shortcut icon" type="image/x-icon" href="./Bilder/mini.png"/>
+
     <!-- EXTRA LINKS -->
     <script defer src="./navbar.js"></script>
     <link rel="stylesheet" href="./extra/css/navbar.css">
@@ -18,7 +25,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Golv & Platt</title>
 
 
     <navbar class="navbar py-4 xl:py-4">
@@ -59,14 +66,14 @@
                         </div>
                     </div>
                     <div class="link px-4 ref-links">
-                        <a class="nav-btn" href="./referenser.html">Referenser</a>
+                        <a class="nav-btn" href="/">Referenser</a>
                         <div class="dropdownref dropdown-ref px-10 hidden rounded text-white">
                             <a class="block my-5 rounded " href="./service/golvslip.html">Sammarbeten</a>
                             <a class="block my-5 rounded " href="./service/flytspack.html">Bilder</a>
                         </div>
                     </div>
                     <div class="link px-4">
-                        <a class="nav-btn" href="./kontakt.html">Kontakt</a>
+                        <a class="nav-btn" href="./contact.html">Kontakt</a>
                     </div>
                 </div>
             </div>
@@ -74,22 +81,26 @@
         </div>
         <div id="links" class="links links-mobile mt-10 xl:hidden mb-10">
             <div class="flex flex-col xl:hidden">
-                <a class="mt-2 py-2 w-1/2 block m-auto " href="index.html">Start</a>
-                <a class="mt-2 py-2 w-1/2 block m-auto " href="company.html">Företaget</a>
+                <a class="mt-2 py-2 w-1/2 block m-auto " href="./index.html">Start</a>
+                <a class="mt-2 py-2 w-1/2 block m-auto " href="./company.html">Företaget</a>
                 <button id="service-btn"  onclick="serviceButton()" class="mt-2 py-2 w-1/2 block m-auto rounded">Tjänster</button>
                 <div id="serviceDropdown" class="dropdown-mobile dropdown-service-mobile hidden rounded text-white w-1/2 mx-auto">
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/golvslip.html">Golvslipning</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/flytspack.html">Flytspackling</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/parkettleggning.html">Parkettläggning</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/mattleggning.html">Mattläggning</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/vatrumarbeten.html">Våtrumsarbeten</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/plattsettning.html">Plattsättning</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/fallspack.html">Fallspackling</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/golvspack.html">Golvspackling</a>
-                    <a class="block my-2 ml-12 rounded px-2 md:w-1/3 py-2" href="./service/tragolvbehand.html">Trägolvsbehandlingar</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2" href="./service/golvslip.html">Golvslipning</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2" href="./service/flytspack.html">Flytspackling</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2" href="./service/parkettleggning.html">Parkettläggning</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2" href="./service/mattleggning.html">Mattläggning</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2" href="./service/vatrumarbeten.html">Våtrumsarbeten</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2" href="./service/plattsettning.html">Plattsättning</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2" href="./service/fallspack.html">Fallspackling</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2" href="./service/golvspack.html">Golvspackling</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2" href="./service/tragolvbehand.html">Trägolvsbehandlingar</a>
                 </div>
-                <a class="mt-2 py-2 w-1/2 block m-auto " href="referenser.html">Referenser</a>
-                <a class="mt-2 py-2 w-1/2 block m-auto " href="contact.html">Kontakt</a>
+                <button  onclick="refButton()" class="mt-2 py-2 w-1/2 block m-auto rounded" >Referenser</button>
+                <div id="refDropdown" class="dropdownref-mobile dropdown-ref-mobile px-10 hidden rounded text-white w-1/2 mx-auto">
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2 " href="./service/golvslip.html">Sammarbeten</a>
+                    <a class="block my-2 rounded px-2 md:w-1/2 mx-auto py-2  " href="./service/flytspack.html">Bilder</a>
+                </div>
+                <a class="mt-2 py-2 w-1/2 block m-auto " href="./contact.html">Kontakt</a>
             </div>
         </div>
     </navbar>

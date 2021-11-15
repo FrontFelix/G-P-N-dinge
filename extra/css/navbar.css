@@ -34,7 +34,7 @@
     width: 100%;
 }
 
-.dropdown-service-mobile a {
+.dropdown-service-mobile a, .dropdown-ref-mobile a {
     background-color: #333c4d !important;
 }
 

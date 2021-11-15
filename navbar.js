@@ -1,4 +1,5 @@
 var y = document.getElementById("serviceDropdown");
+var z = document.getElementById('refDropdown')
 
 
 function navFunction() {
@@ -23,6 +24,15 @@ function serviceButton() {
         y.style.display = "none";
     } else {
         y.style.display = "block";
+    }
+}
+
+
+function refButton() {
+    if (z.style.display === "block") {
+        z.style.display = "none";
+    } else {
+        z.style.display = "block";
     }
 }
 

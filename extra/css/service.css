@@ -3,6 +3,15 @@
     object-fit: cover;
 }
 
+button, a {
+    transition: 200ms;
+}
+
+
+button:hover, a:hover {
+    transform: scale(1.03);
+}
+
 
 .service-right a {
     background-color: #1B202A;
